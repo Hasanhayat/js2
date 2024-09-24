@@ -3,24 +3,124 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>js2</title>
+    <title>JS Assignment</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            color: #333;
+        }
+        section {
+            margin-bottom: 30px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            background-color: #fff;
+            border-radius: 5px;
+        }
+        .input-container {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        input[type="text"], input[type="number"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+        button {
+            padding: 10px 15px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+    </style>
 </head>
 <body>
-    
 
-<h1></h1>
-<br>
-<button onclick="nine()">chap: 9-11</button>
+<h1>JavaScript Assignment - Chapters 9 to 13</h1>
 
-<br>
-<br>
-<button onclick="ten()">chap: 12-13</button>
-    <script src="app.js">
+<!-- Chapter 9-11 Section -->
+<section id="chapter-9-11">
+    <h2>Chapter 9-11 Tasks</h2>
 
+    <div class="input-container">
+        <label for="city">Enter your city name:</label>
+        <input type="text" id="city">
+        <button onclick="checkCity()">Submit</button>
+    </div>
 
+    <div class="input-container">
+        <label for="gender">Enter your gender:</label>
+        <input type="text" id="gender">
+        <button onclick="checkGender()">Submit</button>
+    </div>
 
+    <div class="input-container">
+        <label for="signal">Enter traffic signal color:</label>
+        <input type="text" id="signal">
+        <button onclick="checkSignal()">Submit</button>
+    </div>
 
+    <div class="input-container">
+        <label for="fuel">Enter remaining fuel (in litres):</label>
+        <input type="number" id="fuel">
+        <button onclick="checkFuel()">Submit</button>
+    </div>
 
-    </script>
+    <div class="input-container">
+        <label for="secretNumber">Guess the secret number (1-10):</label>
+        <input type="number" id="secretNumber">
+        <button onclick="guessNumber()">Submit</button>
+    </div>
+</section>
+
+<!-- Chapter 12-13 Section -->
+<section id="chapter-12-13">
+    <h2>Chapter 12-13 Tasks</h2>
+
+    <div class="input-container">
+        <label for="char">Enter a character:</label>
+        <input type="text" id="char">
+        <button onclick="checkCharacter()">Submit</button>
+    </div>
+
+    <div class="input-container">
+        <label for="int1">Enter first integer:</label>
+        <input type="number" id="int1">
+        <label for="int2">Enter second integer:</label>
+        <input type="number" id="int2">
+        <button onclick="compareIntegers()">Submit</button>
+    </div>
+
+    <div class="input-container">
+        <label for="number">Enter a number (positive/negative/zero check):</label>
+        <input type="number" id="number">
+        <button onclick="checkNumber()">Submit</button>
+    </div>
+
+    <div class="input-container">
+        <label for="vowel">Enter a character (vowel check):</label>
+        <input type="text" id="vowel">
+        <button onclick="isVowel()">Submit</button>
+    </div>
+</section>
+
+<script src="app.js"></script>
+
 </body>
 </html>
